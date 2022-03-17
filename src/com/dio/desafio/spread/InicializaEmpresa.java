@@ -73,7 +73,6 @@ public class InicializaEmpresa {
 	}
 	
 	
-	//Recupera os cursos por meio de Polimorfismo
 	//Recupera o nome dos cursos de forma estática
 	private static Set<Curso> inicializaTreinamentos2() {
 		
