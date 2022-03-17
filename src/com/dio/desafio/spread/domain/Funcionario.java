@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+//Aplicado herança entre Funcionario e Pessoa
 public class Funcionario extends Pessoa {
 	
 	public Funcionario() {

@@ -1,7 +1,7 @@
 package com.dio.desafio.spread.domain;
 
 import java.time.LocalDate;
-
+//Aplicado herança entre Treinamento e Curso
 public class Treinamento extends Curso {
 	
 	private LocalDate inicio;

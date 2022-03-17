@@ -17,21 +17,29 @@ import com.dio.desafio.spread.domain.enums.NomeCurso;
 public class InicializaEmpresa {
 	
 	public static void main(String[] args) {
+		
+		//Inicializa a Empresa
 		Empresa dio = new Empresa("Digital Innovation One");
+		
+		//Aplicado o Encapsulamento para recuperar o set de Treinamentos
+		//Utlizado o Set para evitar a duplicação de treinamentos feito pelo Funcionario
 		Treinamentos treinamentos = new Treinamentos();
 		Random random = new Random(9999);
 		
+		//Recupera os treinamentos para cada funcionario
 		treinamentos.setTreinamentos(inicializaTreinamentos1());
-		
+		//Cria o Funcionario por meio de Polimorfismo
 		Pessoa pessoa1 = new Funcionario(UUID.randomUUID(), 
 				                           new Pessoa("João Victor", LocalDate.now().minusYears(23), random.nextInt(999)),
 				                             treinamentos.getTreinamentos());
+		
 		
 		treinamentos.setTreinamentos(inicializaTreinamentos2());
 		Pessoa pessoa2 = new Funcionario(UUID.randomUUID(), 
 				                           new Pessoa("Camila", LocalDate.now().minusYears(17), random.nextInt(999)),
 				                             treinamentos.getTreinamentos() );
 		
+		//Cria o Funcionario por meio de Polimorfismo
 		Pessoa pessoa3 = new Funcionario(UUID.randomUUID(), 
                                           new Pessoa("José", LocalDate.now().minusYears(17), random.nextInt(999)),
                                                null );
@@ -44,6 +52,9 @@ public class InicializaEmpresa {
 	
 	}
 	
+	
+	//Recupera os cursos por meio de Polimorfismo
+	//Recupera o nome dos cursos de forma estática
 	private static Set<Curso> inicializaTreinamentos1() {
 		
 		Set<Curso> treinamentos = new HashSet<>();
@@ -62,6 +73,8 @@ public class InicializaEmpresa {
 	}
 	
 	
+	//Recupera os cursos por meio de Polimorfismo
+	//Recupera o nome dos cursos de forma estática
 	private static Set<Curso> inicializaTreinamentos2() {
 		
 		Set<Curso> treinamentos = new HashSet<>();
