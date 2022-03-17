@@ -5,5 +5,5 @@ Entrega do desafio - Abstraindo um Bootcamp Usando Orientação a Objetos em Jav
 Utilizado os pilares da O.O:
 Abstração, Encapsulamento, Herança e Polimorfismo.
 
-Este exemplo representa uma empresa que contêm seus funcionário e onde cada funcionário possui sua lista de treinamentos realizados.
+Este exemplo representa uma empresa que contêm seus funcionários e onde cada funcionário possui seu set de treinamentos realizados.
 Classes: Empresa, Funcionario(Pessoa), Treinamento(Curso)
